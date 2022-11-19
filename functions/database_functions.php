@@ -1,6 +1,6 @@
 <?php
 	function db_connect(){
-		$conn = mysqli_connect("localhost", "root", "", "obs_db");
+		$conn = mysqli_connect("assignment2-db.cecoujav9xsk.eu-north-1.rds.amazonaws.com", "admin", "Admin123", "obs_db");
 		if(!$conn){
 			echo "Can't connect database " . mysqli_connect_error($conn);
 			exit;
